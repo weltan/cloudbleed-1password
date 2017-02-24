@@ -11,5 +11,9 @@
   "dependencies": {
     "csv-parse": "^1.2.0",
     "domain-name-parser": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+      "url": "git://github.com/weltan/cloudbleed-1password.git"
+      }
 }
