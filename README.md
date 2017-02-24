@@ -1,15 +1,17 @@
 # cloudbleed-1password
 export your 1Password URLS, and see which of them are affected by cloudbleed! (https://bugs.chromium.org/p/project-zero/issues/detail?id=1139)
 
-# To run
+# How to Use This
 
-1. `git clone` this repo.
-2. go to 1Password, Export, as a CSV, all items. 
-3. name it `affectedSites.csv`
-4. do NOT export your passwords: you only need a CSV of the 'URL' column.
-5. move `affectedSites.csv` to this repo.
-6. Inside this repo, run `npm install`
-7. run `node index.js`
+0. You will either need `node` and `npm`, or docker installed to do this setup. 
+1. Go to a directory where you want to place this project, and type `git clone https://github.com/weltan/cloudbleed-1password.git`.
+2. go to 1Password Desktop -> Export -> All items.  **if Export is greyed out select a single vault (you likely have All Vaults selected)**
+3. Name your export file `affectedSites.csv`
+4. Select file format CSV.
+5. You do NOT need to export your passwords: remove all columns except for the 'URL' column.
+6. Once exported, move `affectedSites.csv` into the cloudbleed-1password folder.
+7. Inside the cloudbleed-1password folder, run `npm install`.
+8. Run `node index.js`
 
 # Contribute
 
