@@ -1,0 +1,15 @@
+{
+  "name": "cloudbleed",
+  "version": "0.0.1",
+  "description": "Given a CSV file of URLs (ex. an export of your password manager sites), will return which ones are likely affected by CloudBleed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken Kantzer (ken@pkcsecurity.com)",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "csv-parse": "^1.2.0",
+    "domain-name-parser": "^2.3.0"
+  }
+}
