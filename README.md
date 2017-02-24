@@ -14,3 +14,10 @@ export your 1Password URLS, and see which of them are affected by cloudbleed! (h
 # Contribute
 
 Please do!
+
+# Use a docker container
+For those not willing/able to run nodejs.
+
+1. Follow steps 1-5
+2. Build a container `docker build . -t cloudbleed`
+3. Run the container `docker run -it cloudbleed`
